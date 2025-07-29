@@ -24,7 +24,7 @@ This portfolio is crafted using a robust and highly sought-after modern web deve
 -   **TypeScript:** Employed throughout the codebase to enhance code quality, improve readability, and catch potential errors early in the development cycle through static type checking.
 
 ## 🎨 UI Design
-![Project UI Design](images/ui-design-portfolio-dian-tanjung.png)
+![Project UI Design](public/images/ui-design-portfolio-dian-tanjung.png)
 
 Experience my work firsthand by visiting the live version of my portfolio:
 
