@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dian Tanjung | Frontend Developer & Upwork Freelancer Portfolio
 
-## Getting Started
+[![Vercel Deployment Status](https://vercel.com/button)](https://diantanjung.vercel.app)
+Welcome to the GitHub repository for my personal web portfolio! This project serves as a comprehensive showcase of my skills, experience, and projects as a **Frontend Developer**, specifically designed to attract and engage potential clients, particularly from **Upwork**.
 
-First, run the development server:
+This portfolio is built with a strong focus on modern web development practices, performance, and an intuitive user experience, ensuring that potential clients can quickly understand my capabilities and value.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features & Key Sections
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+-   **Hero Section:** A captivating introduction that highlights my core expertise and unique value proposition.
+-   **About Me:** An in-depth look at my professional journey, key skills, and passion for creating robust web solutions.
+-   **My Recent Work (Projects):** A curated collection of my best projects. Each project is detailed with the problem it solved, my approach, the technologies implemented, and the tangible results achieved, demonstrating my ability to deliver quality work.
+-   **Call to Action (Contact):** A prominent section designed to facilitate direct engagement, with a clear and easy-to-find link to my **Upwork profile** for seamless hiring.
+-   **Responsive Design:** The entire portfolio is meticulously optimized to look and perform flawlessly across all devices, from mobile phones and tablets to large desktop screens.
+-   **SEO Optimized:** Implemented with strategic meta tags and structured data (Schema.org) to maximize discoverability on search engines and social media platforms, with a specific focus on ranking for freelance and "hire developer" related queries.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 💻 Technologies Used
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This portfolio is crafted using a robust and highly sought-after modern web development stack:
 
-## Learn More
+-   **Next.js:** Utilized for its powerful capabilities in building production-ready React applications, including server-side rendering (SSR) and static site generation (SSG), which contribute significantly to performance and SEO.
+-   **React.js:** The core JavaScript library underpinning the user interface, enabling the creation of dynamic, interactive, and component-based web experiences.
+-   **Tailwind CSS:** A utility-first CSS framework that allows for rapid UI development and ensures highly optimized, scalable, and maintainable styling directly within the HTML markup.
+-   **TypeScript:** Employed throughout the codebase to enhance code quality, improve readability, and catch potential errors early in the development cycle through static type checking.
 
-To learn more about Next.js, take a look at the following resources:
+## 🎨 UI Design
+![Project UI Design](images/ui-design-portfolio-dian-tanjung.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Experience my work firsthand by visiting the live version of my portfolio:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[**View Live Portfolio**](https://diantanjung.vercel.app)
 
-## Deploy on Vercel
+## 🌐 Connect with Me
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+I'm always eager to connect with fellow developers, discuss new ideas, and explore exciting freelance opportunities. The best way to initiate a project is via Upwork!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+-   **Hire me on Upwork:** [**https://upwork.com/freelancers/dianmulyanatanjung**](https://upwork.com/freelancers/dianmulyanatanjung)
+-   **GitHub:** [https://github.com/diantanjung](https://github.com/diantanjung)
+-   **LinkedIn:** [https://www.linkedin.com/in/diantanjung/](https://www.linkedin.com/in/diantanjung/)
+-   **X (formerly Twitter):** [https://x.com/diantanjungdev](https://x.com/diantanjungdev)
+-   **Medium:** [https://medium.com/@diantanjung](https://medium.com/@diantanjung)
+-   **Instagram:** [https://www.instagram.com/diantanjungdev](https://www.instagram.com/diantanjungdev)
+
+---
