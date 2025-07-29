@@ -23,9 +23,6 @@ This portfolio is crafted using a robust and highly sought-after modern web deve
 -   **Tailwind CSS:** A utility-first CSS framework that allows for rapid UI development and ensures highly optimized, scalable, and maintainable styling directly within the HTML markup.
 -   **TypeScript:** Employed throughout the codebase to enhance code quality, improve readability, and catch potential errors early in the development cycle through static type checking.
 
-## 🎨 UI Design
-![Project UI Design](public/images/ui-design-portfolio-dian-tanjung.png)
-
 Experience my work firsthand by visiting the live version of my portfolio:
 
 [**View Live Portfolio**](https://diantanjung.vercel.app)
@@ -40,5 +37,8 @@ I'm always eager to connect with fellow developers, discuss new ideas, and explo
 -   **X (formerly Twitter):** [https://x.com/diantanjungdev](https://x.com/diantanjungdev)
 -   **Medium:** [https://medium.com/@diantanjung](https://medium.com/@diantanjung)
 -   **Instagram:** [https://www.instagram.com/diantanjungdev](https://www.instagram.com/diantanjungdev)
+
+## 🎨 UI Design
+![Project UI Design](public/images/ui-design-portfolio-dian-tanjung.png)
 
 ---
