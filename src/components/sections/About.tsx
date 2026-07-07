@@ -12,47 +12,41 @@ const About: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-16">
         <div className="basis-[60%] text-center md:text-left">
           <h2 className="text-3xl md:text-4xl font-normal text-gray-900 leading-tight mb-8 font-manrope">
-            Hi. I&apos;m Dian Tanjung, your expert frontend partner for React &
-            Next.js builds.
+            Hi. I&apos;m Dian Tanjung, a Fullstack Developer with strong experience in frontend development, mobile app development, and backend systems.
           </h2>
           <p className="text-lg text-gray-700 mb-6">
-            With a passion for crafting pixel-perfect and performant user
-            interfaces, I specialize in bringing complex designs to life using
-            modern web technologies. My focus is on creating intuitive and
-            engaging user experiences.
+            I build modern web applications using React and Next.js, develop cross-platform mobile apps with Flutter, and create backend services using technologies such as Node.js, Go, Laravel, and PostgreSQL.
           </p>
           <p className="text-lg text-gray-700 mb-8">
-            I leverage the power of React, Next.js, and a robust understanding
-            of component-based architecture to build scalable and maintainable
-            applications.
+            My strength is turning business requirements into practical, maintainable, and scalable applications — from user interface implementation, API integration, database design, to deployment-ready systems.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 mb-10">
             <div className="flex items-center text-gray-800">
               <CheckCircleIcon className="h-6 w-6 text-softOrange mr-3" />
-              <span className="text-lg">Component-based architecture</span>
+              <span className="text-lg">Modern Frontend Development</span>
             </div>
             <div className="flex items-center text-gray-800">
               <CheckCircleIcon className="h-6 w-6 text-softOrange mr-3" />
-              <span className="text-lg">State management solutions</span>
+              <span className="text-lg">RESTful API Development</span>
             </div>
             {/* Skill 3 */}
             <div className="flex items-center text-gray-800">
               <CheckCircleIcon className="h-6 w-6 text-softOrange mr-3" />
-              <span className="text-lg">Pixel-perfect UIs</span>
+              <span className="text-lg">Database Design & Management</span>
             </div>
             {/* Skill 4 */}
             <div className="flex items-center text-gray-800">
               <CheckCircleIcon className="h-6 w-6 text-softOrange mr-3" />
-              <span className="text-lg">Responsive & adaptive design</span>
+              <span className="text-lg">Frontend-Backend Integration</span>
             </div>
             <div className="flex items-center text-gray-800">
               <CheckCircleIcon className="h-6 w-6 text-softOrange mr-3" />
-              <span className="text-lg">Performance optimization</span>
+              <span className="text-lg">Application Performance Optimization</span>
             </div>
             <div className="flex items-center text-gray-800">
               <CheckCircleIcon className="h-6 w-6 text-softOrange mr-3" />
-              <span className="text-lg">Cross-browser compatibility</span>
+              <span className="text-lg">Deployment & Production Setup</span>
             </div>
           </div>
 

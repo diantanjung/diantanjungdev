@@ -18,11 +18,11 @@ const Contact: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <SectionHeader
           title="Let's Build Something That Works Flawlessly."
-          text="Looking for a frontend dev who can turn your vision into an interactive, responsive product? I'd love to hear about your project and see how I can help."
+          text="I’m open to opportunities where I can contribute to building reliable web applications, mobile apps, backend APIs, and end-to-end digital solutions."
         />
         <Button
           variant="secondary"
-          text="Let's connect on Upwork"
+          text="Let's connect"
           onClick={() =>
             window.open(
               "https://upwork.com/freelancers/dianmulyanatanjung",
