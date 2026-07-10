@@ -2,17 +2,8 @@
 
 import React from "react";
 import Image from "next/image";
-import Button from "./Button";
-
-interface Project {
-  id: number;
-  title: string;
-  description: string;
-  imageUrl: string;
-  technologies: string[];
-  liveLink?: string; 
-  repoLink?: string; 
-}
+import Link from "next/link";
+import type { Project } from "@/lib/projects";
 
 interface ProjectCardProps {
   project: Project;
@@ -29,9 +20,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         <Image
           src={project.imageUrl}
           alt={project.title}
-          layout="fill"
-          objectFit="cover"
-          className="rounded-t-lg"
+          fill
+          sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+          className="rounded-t-lg object-cover"
         />
       </div>
 
@@ -50,22 +41,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           ))}
         </div>
         <p className="text-gray-700 text-sm mb-8">{project.description}</p>
-        <div className="flex gap-4 ">
-          {project.liveLink && (
-            <Button
-              variant="primary"
-              text="Live Demo"
-              className="py-2 px-4 text-sm"
-            />
-          )}
-          {project.repoLink && (
-            <Button
-              variant="secondary"
-              text="GitHub Repo"
-              className="py-2 px-4 text-sm"
-            />
-          )}
-        </div>
+        <Link
+          href={`/projects/${project.slug}`}
+          className="inline-flex px-5 py-2 font-normal transition-colors duration-300 ease-in-out cursor-pointer rounded-full bg-softOrange text-darkText hover:bg-lightYellow text-sm"
+        >
+          Read More
+        </Link>
       </div>
     </div>
   );

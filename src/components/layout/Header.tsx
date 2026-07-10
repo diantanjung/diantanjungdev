@@ -41,19 +41,11 @@ const Header: React.FC = () => {
     e: React.MouseEvent<HTMLAnchorElement>,
     id: string
   ) => {
-    e.preventDefault();
     const section = document.getElementById(id);
     if (section) {
+      e.preventDefault();
       section.scrollIntoView({ behavior: "smooth" });
-    }
-    setActiveSection(id);
-    setIsMobileMenuOpen(false);
-  };
-
-  const handleCtaClick = () => {
-    const contactSection = document.getElementById("contact");
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: "smooth" });
+      setActiveSection(id);
     }
     setIsMobileMenuOpen(false);
   };
@@ -73,7 +65,7 @@ const Header: React.FC = () => {
 
         <nav className="hidden md:flex items-center space-x-6">
           <Link
-            href="#about"
+            href="/#about"
             onClick={(e) => handleNavLinkClick(e, "about")}
             className={`text-lg font-normal transition-colors duration-200 ${
               activeSection === "about"
@@ -84,7 +76,7 @@ const Header: React.FC = () => {
             About
           </Link>
           <Link
-            href="#projects"
+            href="/#projects"
             onClick={(e) => handleNavLinkClick(e, "projects")}
             className={`text-lg font-normal transition-colors duration-200 ${
               activeSection === "projects"
@@ -95,7 +87,7 @@ const Header: React.FC = () => {
             Projects
           </Link>
           <Link
-            href="#contact"
+            href="/#contact"
             onClick={(e) => handleNavLinkClick(e, "contact")}
             className={`text-lg font-normal transition-colors duration-200 ${
               activeSection === "contact"
@@ -144,7 +136,7 @@ const Header: React.FC = () => {
       >
         <nav className="flex flex-col items-center justify-center h-full space-y-8">
           <Link
-            href="#about"
+            href="/#about"
             onClick={(e) => handleNavLinkClick(e, "about")}
             className={`text-white text-3xl font-bold transition-colors duration-200 ${
               activeSection === "about"
@@ -155,7 +147,7 @@ const Header: React.FC = () => {
             About
           </Link>
           <Link
-            href="#projects"
+            href="/#projects"
             onClick={(e) => handleNavLinkClick(e, "projects")}
             className={`text-white text-3xl font-bold transition-colors duration-200 ${
               activeSection === "projects"
@@ -166,7 +158,7 @@ const Header: React.FC = () => {
             Projects
           </Link>
           <Link
-            href="#contact"
+            href="/#contact"
             onClick={(e) => handleNavLinkClick(e, "contact")}
             className={`text-white text-3xl font-bold transition-colors duration-200 ${
               activeSection === "contact"
