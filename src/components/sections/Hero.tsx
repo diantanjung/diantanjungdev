@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
             text="Let’s connect"
             onClick={() =>
               window.open(
-                "https://upwork.com/freelancers/dianmulyanatanjung",
+                "https://www.linkedin.com/in/diantanjung/",
                 "_blank"
               )
             }

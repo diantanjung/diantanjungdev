@@ -27,6 +27,10 @@ export const metadata: Metadata = {
     "Hire React Developer",
     "Upwork Freelancer",
     "Upwork Frontend",
+    "Upwork Backend",
+    "Linkedin Freelancer",
+    "Linkedin Frontend",
+    "Linkedin Backend",
     "Remote Web Developer",
     "Full-stack Developer", // Add more specific skills if relevant
   ],
@@ -98,8 +102,8 @@ export default function RootLayout({
         sameAs: [
           // All your social/professional profiles are linked here
           "https://upwork.com/freelancers/dianmulyanatanjung", // Your Upwork Profile - TOP PRIORITY!
-          "https://github.com/diantanjung",
           "https://www.linkedin.com/in/diantanjung/",
+          "https://github.com/diantanjung",
           "https://x.com/diantanjungdev", // Using x.com for Twitter
           "https://medium.com/@diantanjung",
           "https://www.instagram.com/diantanjungdev",
@@ -130,7 +134,7 @@ export default function RootLayout({
         isPartOf: { "@id": "https://diantanjung.vercel.app/#website" }, // Link to the Website entity
         about: { "@id": "https://diantanjung.vercel.app/#person" }, // Link to the Person entity
         description:
-          "Hire Dian Tanjung, a top-rated Frontend Developer on Upwork. Specializing in React, Next.js, and Tailwind CSS for robust, scalable web applications.",
+          "Hire Dian Tanjung, a top-rated Frontend Developer on Linkedin and Upwork. Specializing in React, Next.js, and Tailwind CSS for robust, scalable web applications.",
         inLanguage: "en-US", // Or your specific language, e.g., "id-ID"
       },
       // You could add "ProfessionalService" or "Service" schema here if you want to detail services

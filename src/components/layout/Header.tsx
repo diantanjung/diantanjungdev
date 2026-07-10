@@ -110,7 +110,7 @@ const Header: React.FC = () => {
             text="Hire Me"
             onClick={() =>
               window.open(
-                "https://upwork.com/freelancers/dianmulyanatanjung",
+                "https://www.linkedin.com/in/diantanjung/",
                 "_blank"
               )
             }
@@ -181,7 +181,7 @@ const Header: React.FC = () => {
             text="Hire Me"
             onClick={() =>
               window.open(
-                "https://upwork.com/freelancers/dianmulyanatanjung",
+                "https://www.linkedin.com/in/diantanjung/",
                 "_blank"
               )
             }

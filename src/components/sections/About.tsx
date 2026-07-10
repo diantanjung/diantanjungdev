@@ -61,7 +61,7 @@ const About: React.FC = () => {
               variant="primary"
               onClick={() =>
                 window.open(
-                  "https://upwork.com/freelancers/dianmulyanatanjung",
+                  "https://www.linkedin.com/in/diantanjung/",
                   "_blank"
                 )
               }
