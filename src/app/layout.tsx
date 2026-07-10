@@ -1,6 +1,5 @@
 import "./globals.css"; // Your global styles
-import { Metadata } from "next"; // Import Metadata type from 'next'
-import Script from "next/script"; // Import Script for JSON-LD
+import { Metadata, Viewport } from "next"; // Import Metadata type from 'next'
 
 // Import your manrope font
 import { manrope } from "./fonts/manrope"; // Adjust path if different
@@ -76,11 +75,63 @@ export const metadata: Metadata = {
     images: ["https://diantanjung.vercel.app/twitter-image.jpg"], // IMPORTANT: Path to your Twitter card image (1200x675px recommended)
   },
 
-  // Viewport setting (already default in Next.js, but good to explicitly know)
-  viewport: "width=device-width, initial-scale=1",
-
   // Other optional meta tags
   robots: "index, follow", // Tells search engines to index and follow links
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
+const schemaMarkup = {
+  "@context": "https://schema.org",
+  "@graph": [
+    // Using @graph for multiple entities on the page
+    {
+      "@type": "Person",
+      "@id": "https://diantanjung.vercel.app/#person", // IMPORTANT: Unique identifier for yourself (using your domain)
+      name: "Dian Tanjung",
+      url: "https://diantanjung.vercel.app", // Your portfolio website
+      sameAs: [
+        // All your social/professional profiles are linked here
+        "https://upwork.com/freelancers/dianmulyanatanjung", // Your Upwork Profile - TOP PRIORITY!
+        "https://www.linkedin.com/in/diantanjung/",
+        "https://github.com/diantanjung",
+        "https://x.com/diantanjungdev", // Using x.com for Twitter
+        "https://medium.com/@diantanjung",
+        "https://www.instagram.com/diantanjungdev",
+      ],
+      jobTitle: "Frontend Developer",
+      worksFor: {
+        "@type": "Organization",
+        name: "Freelance", // Or your company name if you have one
+      },
+      description:
+        "Experienced Frontend Developer specializing in building interactive and responsive web applications with React, Next.js, and Tailwind CSS. Available for freelance projects on Upwork.",
+      alumniOf: "Your University/Bootcamp Name (Optional)", // Optional: e.g., "Universitas Indonesia"
+      knowsLanguage: ["en", "id"], // English, Indonesian (adjust as needed)
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://diantanjung.vercel.app/#website", // Unique identifier for your website
+      url: "https://diantanjung.vercel.app", // Your portfolio website
+      name: "Dian Tanjung Frontend Portfolio",
+      publisher: { "@id": "https://diantanjung.vercel.app/#person" }, // Link to the Person entity
+      inLanguage: "en-US", // Or your specific language, e.g., "id-ID"
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://diantanjung.vercel.app/#webpage", // Unique identifier for this specific page (home page)
+      url: "https://diantanjung.vercel.app", // Your portfolio website
+      name: "Dian Tanjung - Frontend Developer Portfolio",
+      isPartOf: { "@id": "https://diantanjung.vercel.app/#website" }, // Link to the Website entity
+      about: { "@id": "https://diantanjung.vercel.app/#person" }, // Link to the Person entity
+      description:
+        "Hire Dian Tanjung, a top-rated Frontend Developer on Linkedin and Upwork. Specializing in React, Next.js, and Tailwind CSS for robust, scalable web applications.",
+      inLanguage: "en-US", // Or your specific language, e.g., "id-ID"
+    },
+  ],
 };
 
 export default function RootLayout({
@@ -88,80 +139,17 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // Define your JSON-LD Schema Markup
-  // This helps search engines understand the content on your page more deeply.
-  const schemaMarkup = {
-    "@context": "https://schema.org",
-    "@graph": [
-      // Using @graph for multiple entities on the page
-      {
-        "@type": "Person",
-        "@id": "https://diantanjung.vercel.app/#person", // IMPORTANT: Unique identifier for yourself (using your domain)
-        name: "Dian Tanjung",
-        url: "https://diantanjung.vercel.app", // Your portfolio website
-        sameAs: [
-          // All your social/professional profiles are linked here
-          "https://upwork.com/freelancers/dianmulyanatanjung", // Your Upwork Profile - TOP PRIORITY!
-          "https://www.linkedin.com/in/diantanjung/",
-          "https://github.com/diantanjung",
-          "https://x.com/diantanjungdev", // Using x.com for Twitter
-          "https://medium.com/@diantanjung",
-          "https://www.instagram.com/diantanjungdev",
-        ],
-        jobTitle: "Frontend Developer",
-        worksFor: {
-          "@type": "Organization",
-          name: "Freelance", // Or your company name if you have one
-        },
-        description:
-          "Experienced Frontend Developer specializing in building interactive and responsive web applications with React, Next.js, and Tailwind CSS. Available for freelance projects on Upwork.",
-        alumniOf: "Your University/Bootcamp Name (Optional)", // Optional: e.g., "Universitas Indonesia"
-        knowsLanguage: ["en", "id"], // English, Indonesian (adjust as needed)
-      },
-      {
-        "@type": "WebSite",
-        "@id": "https://diantanjung.vercel.app/#website", // Unique identifier for your website
-        url: "https://diantanjung.vercel.app", // Your portfolio website
-        name: "Dian Tanjung Frontend Portfolio",
-        publisher: { "@id": "https://diantanjung.vercel.app/#person" }, // Link to the Person entity
-        inLanguage: "en-US", // Or your specific language, e.g., "id-ID"
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://diantanjung.vercel.app/#webpage", // Unique identifier for this specific page (home page)
-        url: "https://diantanjung.vercel.app", // Your portfolio website
-        name: "Dian Tanjung - Frontend Developer Portfolio",
-        isPartOf: { "@id": "https://diantanjung.vercel.app/#website" }, // Link to the Website entity
-        about: { "@id": "https://diantanjung.vercel.app/#person" }, // Link to the Person entity
-        description:
-          "Hire Dian Tanjung, a top-rated Frontend Developer on Linkedin and Upwork. Specializing in React, Next.js, and Tailwind CSS for robust, scalable web applications.",
-        inLanguage: "en-US", // Or your specific language, e.g., "id-ID"
-      },
-      // You could add "ProfessionalService" or "Service" schema here if you want to detail services
-      // For instance:
-      // {
-      //   "@type": "Service",
-      //   "name": "Frontend Web Development",
-      //   "description": "Custom frontend development services using React, Next.js, and modern web technologies.",
-      //   "provider": { "@id": "https://diantanjung.vercel.app/#person" },
-      //   "serviceType": "Web Development",
-      //   "url": "https://upwork.com/freelancers/dianmulyanatanjung" // Direct link to your Upwork service
-      // }
-    ],
-  };
-
   return (
     // Apply the Manrope font variable to the html tag
     <html lang="en" className={`${manrope.variable}`}>
-      <head>
-        {/* JSON-LD Structured Data for Rich Snippets */}
-        <Script
+      <body suppressHydrationWarning>
+        <script
           id="json-ld-schema" // Unique ID for the script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
         />
-      </head>
-      <body>{children}</body>
+        {children}
+      </body>
     </html>
   );
 }
